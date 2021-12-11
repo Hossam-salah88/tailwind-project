@@ -23,7 +23,7 @@
     <!--====================== Header section ===================-->
     <header>
       <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-        <div class="py-1">
+        <div class="py-1 nav__img">
           <a href="#"
             ><img src="src/imgs/logo-bookmark.svg" alt="logo-bookmark"
           /></a>
@@ -41,12 +41,21 @@
             text-xs
           "
         >
-          <li class="cursor-pointer">Features</li>
-          <li class="cursor-pointer">Pricing</li>
-          <li class="cursor-pointer">Contact</li>
+          <li class="nav__item cursor-pointer font-semibold">Features</li>
+          <li class="nav__item cursor-pointer font-semibold">Pricing</li>
+          <li class="nav__item cursor-pointer font-semibold">Contact</li>
           <button
             type="button"
-            class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
+            class="
+              nav__btn
+              bg-bookmark-red
+              text-white
+              rounded-md
+              px-7
+              py-3
+              uppercase
+              font-semibold
+            "
           >
             Login
           </button>
@@ -58,7 +67,7 @@
     </header>
 
     <!--============================ Hero section =========================-->
-    <section class="relative">
+    <section class="hero relative">
       <div
         class="
           container
@@ -71,7 +80,9 @@
         "
       >
         <!--================== Content Hero section ========================-->
-        <div class="flex flex-1 flex-col items-center lg:items-start">
+        <div
+          class="hero__content flex flex-1 flex-col items-center lg:items-start"
+        >
           <h2
             class="
               text-bookmark-blue text-3xl
@@ -89,7 +100,7 @@
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </p>
-          <div class="flex justify-center flex-wrap gap-6">
+          <div class="hero__btn flex justify-center flex-wrap gap-6">
             <button
               type="button"
               class="btn btn-purple hover:bg-bookmark-white hover:text-black"
@@ -105,7 +116,18 @@
           </div>
         </div>
         <!-- Image -->
-        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+        <div
+          class="
+            hero__img
+            flex
+            justify-center
+            flex-1
+            mb-10
+            md:mb-16
+            lg:mb-0
+            z-10
+          "
+        >
           <img
             class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
             src="src/imgs/hero-bg.png"
@@ -116,6 +138,7 @@
       <!--================================== Rounded Rectangle ==============-->
       <div
         class="
+          hero__rounded-rect
           hidden
           md:block
           overflow-hidden
@@ -133,18 +156,25 @@
     </section>
 
     <!--============================ Features section ====================-->
-    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+    <section class="features bg-bookmark-white py-20 mt-20 lg:mt-60">
       <!-- Heading -->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark-blue">Features</h1>
-        <p class="text-center text-bookmark-grey mt-4">
+        <h2 class="text-3xl text-center text-bookmark-blue">
+          <span class="letter">F</span>
+          <span class="letter">E</span>
+          <span class="letter">A</span>
+          <span class="letter">T</span>
+          <span class="letter">U</span>
+          <span class="letter">R</span>
+        </h2>
+        <p class="features__subtitle text-center text-bookmark-grey mt-4">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
       </div>
       <!--========================== Feature #1 =========================-->
-      <div class="relative mt-20 lg:mt-24">
+      <div class="feature1 relative mt-20 lg:mt-24">
         <div
           class="
             container
@@ -156,7 +186,9 @@
           "
         >
           <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <div
+            class="feature1__img flex flex-1 justify-center z-10 mb-10 lg:mb-0"
+          >
             <img
               class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
               src="src/imgs/illustration-features-tab-1.png"
@@ -165,9 +197,12 @@
           </div>
           <!-- Content -->
           <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1>
+            <h1 class="feature1__title text-3xl text-bookmark-blue">
+              Bookmark in one click
+            </h1>
             <p
               class="
+                feature1__subtitle
                 text-bookmark-grey
                 my-4
                 text-center
@@ -182,7 +217,11 @@
             </p>
             <button
               type="button"
-              class="btn btn-purple hover:bg-bookmark-white hover:text-black"
+              class="
+                feature1__btn
+                btn btn-purple
+                hover:bg-bookmark-white hover:text-black
+              "
             >
               More Info
             </button>
@@ -191,6 +230,7 @@
         <!-- Rounded Rectangle -->
         <div
           class="
+            featur1__rounded-rect
             hidden
             md:block
             overflow-hidden
@@ -219,7 +259,9 @@
           "
         >
           <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <div
+            class="feature2__img flex flex-1 justify-center z-10 mb-10 lg:mb-0"
+          >
             <img
               class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
               src="src/imgs/illustration-features-tab-2.png"
@@ -227,10 +269,20 @@
             />
           </div>
           <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
+          <div
+            class="
+              feature2__content
+              flex flex-1 flex-col
+              items-center
+              lg:items-start
+            "
+          >
+            <h1 class="feature2__title text-3xl text-bookmark-blue">
+              Intelligent search
+            </h1>
             <p
               class="
+                feature2__subtitle
                 text-bookmark-grey
                 my-4
                 text-center
@@ -244,7 +296,11 @@
             </p>
             <button
               type="button"
-              class="btn btn-purple hover:bg-bookmark-white hover:text-black"
+              class="
+                feature2__btn
+                btn btn-purple
+                hover:bg-bookmark-white hover:text-black
+              "
             >
               More Info
             </button>
@@ -253,6 +309,7 @@
         <!-- Rounded Rectangle -->
         <div
           class="
+            featur2__rounded-rect
             hidden
             md:block
             overflow-hidden
@@ -281,7 +338,9 @@
           "
         >
           <!-- Image -->
-          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <div
+            class="feature2__img flex flex-1 justify-center z-10 mb-10 lg:mb-0"
+          >
             <img
               class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
               src="src/imgs/illustration-features-tab-3.png"
@@ -289,7 +348,14 @@
             />
           </div>
           <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
+          <div
+            class="
+              feature2__content
+              flex flex-1 flex-col
+              items-center
+              lg:items-start
+            "
+          >
             <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1>
             <p
               class="
@@ -315,6 +381,7 @@
         <!-- Rounded Rectangle -->
         <div
           class="
+            featur2__rounded-rect
             hidden
             md:block
             overflow-hidden
@@ -609,5 +676,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- ====================== anime.js script ============================================ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/anime.js"></script>
   </body>
 </html>
